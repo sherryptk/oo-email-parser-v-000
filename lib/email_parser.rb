@@ -15,7 +15,7 @@ def parse
   parsed=@emails.split(" ")
   parsed
 
-end 
+end
 
 end
 
