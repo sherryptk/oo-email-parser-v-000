@@ -16,9 +16,10 @@ def parse
   if @emails.include?(",")
     parsed=@emails.split(", ")
   else
-  parsed=@emails.split(" ")
-end
-  parsed
+    parsed=@emails.split(" ")
+  end
+  
+  parsed.uniq
 
 end
 
