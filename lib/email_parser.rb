@@ -18,7 +18,7 @@ def parse
   # else
   #   parsed=@emails.split(" ")
   # end
-  @emails.split(/[\s,]+/).uniq
+  parsed=@emails.split(/[\s,]+/)
   parsed.uniq
 
 end
