@@ -19,7 +19,7 @@ def parse
   #   parsed=@emails.split(" ")
   # end
   parsed=@emails.split(/[\s,]+/).uniq
-  parsed
+  # parsed
 
 end
 
