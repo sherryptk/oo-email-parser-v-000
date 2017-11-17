@@ -14,7 +14,7 @@ def parse
   parsed=[]
 
   if @emails.include?(",")
-    parsed=@emails.split(",")
+    parsed=@emails.split(", ")
   else
   parsed=@emails.split(" ")
 end
