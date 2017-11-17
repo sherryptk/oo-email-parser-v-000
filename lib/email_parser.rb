@@ -5,7 +5,7 @@
 
 class EmailParser
   attr_accessor :emails
-  
+
   def initialize(emails)
     @emails=emails
   end
@@ -13,9 +13,9 @@ class EmailParser
 def parse
   parsed=[]
 
-  if @emails.include?(",") 
-    parsed=@emails.split(",") 
-  else  
+  if @emails.include?(",")
+    parsed=@emails.split(",")
+  else
   parsed=@emails.split(" ")
 end
   parsed
