@@ -13,12 +13,12 @@ class EmailParser
 def parse
   parsed=[]
 
-  if @emails.include?(",")
-    parsed=@emails.split(", ")
-  else
-    parsed=@emails.split(" ")
-  end
-  
+  # if @emails.include?(",")
+  #   parsed=@emails.split(", ")
+  # else
+  #   parsed=@emails.split(" ")
+  # end
+  @emails.split(/[\s,]+/).uniq
   parsed.uniq
 
 end
