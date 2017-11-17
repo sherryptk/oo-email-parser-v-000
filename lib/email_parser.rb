@@ -10,30 +10,9 @@ class EmailParser
     @emails=emails
   end
 
-def parse
-  parsed=[]
-
-  # if @emails.include?(",")
-  #   parsed=@emails.split(", ")
-  # else
-  #   parsed=@emails.split(" ")
-  # end
-  parsed=@emails.split(/[\s,]+/).uniq
-  # parsed
+  def parse
+    parsed=[]
+    parsed=@emails.split(/[\s,]+/).uniq
+  end
 
 end
-
-end
-
-
-# rows = csv_data.split("\n")
-# people = rows.collect do |row|
-#   data = row.split(", ")
-#   name = data[0]
-#   age = data[1]
-#   company = data[2]
-#   person = Person.new
-#   person.name = name
-#   person.age = age
-#   person.company = company
-#   person
